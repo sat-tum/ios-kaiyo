@@ -77,7 +77,15 @@ struct OnboardingView: View {
             currentGrade: selectedGrade,
             department: selectedDepartment
         )
-        navigateToCreditRegistration = true
+        
+        // 1年生の場合は過去の単位登録をスキップ
+        if selectedGrade == 1 {
+            // 1年生は過去の単位がないため、直接メイン画面へ
+            // isFirstLaunchがfalseになるので自動的にMainTabViewに遷移
+        } else {
+            // 2年生以上は過去の単位登録画面へ
+            navigateToCreditRegistration = true
+        }
     }
 }
 

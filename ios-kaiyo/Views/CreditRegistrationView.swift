@@ -20,88 +20,103 @@ struct CreditRegistrationView: View {
     }
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                // 学期の進捗表示
-                if !semesters.isEmpty {
-                    ProgressView(value: Double(currentSemesterIndex + 1), total: Double(semesters.count))
-                        .padding()
+        if semesters.isEmpty {
+            // 1年生など、登録する学期がない場合は自動的にスキップ
+            // (この画面は表示されず、ContentViewがMainTabViewを表示)
+            EmptyView()
+        } else {
+            NavigationStack {
+                VStack {
+                    // 学期の進捗表示
+                    VStack(spacing: 8) {
+                        ProgressView(value: Double(currentSemesterIndex + 1), total: Double(semesters.count))
+                            .padding(.horizontal)
+                        
+                        Text("\(semesters[currentSemesterIndex])")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                        
+                        Text("履修した科目を選択してください")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    .padding()
+                    .background(Color(.systemGroupedBackground))
                     
-                    Text("\(semesters[currentSemesterIndex])")
-                        .font(.headline)
-                        .padding(.bottom, 8)
-                }
-                
-                // 選択済み科目のリスト
-                List {
-                    if let courses = selectedCourses[semesters[safe: currentSemesterIndex] ?? ""], !courses.isEmpty {
-                        ForEach(courses, id: \.self) { course in
-                            HStack {
-                                Text(course)
-                                Spacer()
-                                Button {
-                                    removeCourse(course)
-                                } label: {
-                                    Image(systemName: "minus.circle.fill")
-                                        .foregroundStyle(.red)
+                    // 選択済み科目のリスト
+                    if let courses = selectedCourses[semesters[currentSemesterIndex]], !courses.isEmpty {
+                        List {
+                            ForEach(courses, id: \.self) { course in
+                                HStack {
+                                    Text(course)
+                                    Spacer()
+                                    Button {
+                                        removeCourse(course)
+                                    } label: {
+                                        Image(systemName: "minus.circle.fill")
+                                            .foregroundStyle(.red)
+                                    }
                                 }
                             }
                         }
                     } else {
+                        Spacer()
                         ContentUnavailableView(
                             "履修科目なし",
                             systemImage: "book.closed",
-                            description: Text("「科目を追加」ボタンから履修した科目を追加してください")
+                            description: Text("この学期に履修した科目がない場合は\n「スキップ」ボタンで次へ進んでください")
                         )
+                        Spacer()
                     }
-                }
-                
-                // ボタン
-                VStack(spacing: 12) {
-                    Button {
-                        showingCourseSelector = true
-                    } label: {
-                        Label("科目を追加", systemImage: "plus.circle.fill")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(.borderedProminent)
                     
-                    HStack(spacing: 12) {
-                        if currentSemesterIndex > 0 {
-                            Button("前へ") {
-                                currentSemesterIndex -= 1
-                            }
-                            .buttonStyle(.bordered)
-                        }
-                        
-                        Button(currentSemesterIndex < semesters.count - 1 ? "次へ" : "完了") {
-                            if currentSemesterIndex < semesters.count - 1 {
-                                currentSemesterIndex += 1
-                            } else {
-                                saveCredits()
-                            }
+                    // ボタン
+                    VStack(spacing: 12) {
+                        Button {
+                            showingCourseSelector = true
+                        } label: {
+                            Label("科目を追加", systemImage: "plus.circle.fill")
+                                .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)
-                        .frame(maxWidth: .infinity)
+                        
+                        HStack(spacing: 12) {
+                            if currentSemesterIndex > 0 {
+                                Button("前へ") {
+                                    currentSemesterIndex -= 1
+                                }
+                                .buttonStyle(.bordered)
+                            }
+                            
+                            Button("スキップ") {
+                                moveToNextSemester()
+                            }
+                            .buttonStyle(.bordered)
+                            
+                            Button(currentSemesterIndex < semesters.count - 1 ? "次へ" : "完了") {
+                                moveToNextSemester()
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .frame(maxWidth: .infinity)
+                        }
                     }
+                    .padding()
                 }
-                .padding()
-            }
-            .navigationTitle("📝 過去の単位登録")
-            .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $showingCourseSelector) {
-                CourseSelectorView(
-                    semester: semesters[safe: currentSemesterIndex] ?? "",
-                    selectedCourses: Binding(
-                        get: { selectedCourses[semesters[safe: currentSemesterIndex] ?? ""] ?? [] },
-                        set: { selectedCourses[semesters[safe: currentSemesterIndex] ?? ""] = $0 }
+                .navigationTitle("📝 過去の単位登録")
+                .navigationBarTitleDisplayMode(.inline)
+                .sheet(isPresented: $showingCourseSelector) {
+                    CourseSelectorView(
+                        semester: semesters[currentSemesterIndex],
+                        selectedCourses: Binding(
+                            get: { selectedCourses[semesters[currentSemesterIndex]] ?? [] },
+                            set: { selectedCourses[semesters[currentSemesterIndex]] = $0 }
+                        )
                     )
-                )
+                }
             }
         }
     }
     
-    /// 入学年度から現在までの学期リストを生成
+    /// 入学年度から現学年の直前の学期までのリストを生成
     private func generateSemesters() -> [String] {
         guard let profile = viewModel.userProfile else { return [] }
         
@@ -109,15 +124,39 @@ struct CreditRegistrationView: View {
         let currentYear = Calendar.current.component(.year, from: Date())
         let currentMonth = Calendar.current.component(.month, from: Date())
         
-        // 現在の学期を判定
-        let currentSemester = (currentMonth >= 3 && currentMonth <= 8) ? "前期" : "後期"
+        // 現在の学期を判定（3月〜8月: 前期、9月〜2月: 後期）
+        let isCurrentSemesterZenki = (currentMonth >= 3 && currentMonth <= 8)
         
-        // 入学年度から現在の学期までのリストを作成
-        for year in profile.enrollmentYear...currentYear {
-            if year == currentYear {
-                // 現在年度は現在の学期まで
+        // 1年生の場合、過去の単位登録は不要
+        if profile.currentGrade == 1 {
+            return []
+        }
+        
+        // 入学年度から現学年の直前の学期までを計算
+        let startYear = profile.enrollmentYear
+        let endYear: Int
+        let includeZenkiOfEndYear: Bool
+        
+        // 現在の学年に基づいて、登録すべき最後の学期を決定
+        if profile.currentGrade == 2 {
+            // 2年生：1年次の単位を登録
+            endYear = startYear
+            includeZenkiOfEndYear = true // 1年後期まで
+        } else if profile.currentGrade == 3 {
+            // 3年生：1-2年次の単位を登録
+            endYear = startYear + 1
+            includeZenkiOfEndYear = true // 2年後期まで
+        } else {
+            // 4年生：1-3年次の単位を登録
+            endYear = startYear + 2
+            includeZenkiOfEndYear = true // 3年後期まで
+        }
+        
+        // 学期リストを生成
+        for year in startYear...endYear {
+            if year == endYear {
                 semesters.append("\(year)-前期")
-                if currentSemester == "後期" {
+                if includeZenkiOfEndYear {
                     semesters.append("\(year)-後期")
                 }
             } else {
@@ -130,8 +169,16 @@ struct CreditRegistrationView: View {
     }
     
     private func removeCourse(_ course: String) {
-        guard let semester = semesters[safe: currentSemesterIndex] else { return }
+        let semester = semesters[currentSemesterIndex]
         selectedCourses[semester]?.removeAll { $0 == course }
+    }
+    
+    private func moveToNextSemester() {
+        if currentSemesterIndex < semesters.count - 1 {
+            currentSemesterIndex += 1
+        } else {
+            saveCredits()
+        }
     }
     
     private func saveCredits() {
@@ -153,7 +200,7 @@ struct CreditRegistrationView: View {
         }
         
         viewModel.addCreditsBatch(credits)
-        // 登録完了後は自動的にメイン画面に遷移（isFirstLaunchがfalseになっているため）
+        // 保存完了後、isFirstLaunchがfalseになるので自動的にMainTabViewに遷移
     }
 }
 
