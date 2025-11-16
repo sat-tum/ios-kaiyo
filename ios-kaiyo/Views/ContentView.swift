@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var viewModel = AppViewModel()
+    @State private var showingOnboarding = false
+    @State private var showingCreditRegistration = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if viewModel.isFirstLaunch {
+                Color.clear
+                    .onAppear {
+                        showingOnboarding = true
+                    }
+            } else {
+                MainTabView(viewModel: viewModel)
+            }
         }
-        .padding()
+        .sheet(isPresented: $showingOnboarding) {
+            OnboardingView(viewModel: viewModel)
+                .interactiveDismissDisabled()
+                .onDisappear {
+                    if !viewModel.isFirstLaunch {
+                        showingCreditRegistration = true
+                    }
+                }
+        }
+        .sheet(isPresented: $showingCreditRegistration) {
+            CreditRegistrationView(viewModel: viewModel)
+                .interactiveDismissDisabled()
+        }
     }
 }
 
