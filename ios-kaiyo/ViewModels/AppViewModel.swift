@@ -37,15 +37,15 @@ class AppViewModel {
         loadUserProfile()
         loadAcquiredCredits()
     }
-    
+
     // MARK: - ユーザープロファイル管理
-    
+
     /// ユーザープロファイルを読み込む
     func loadUserProfile() {
         userProfile = userProfileRepository.fetch()
         isFirstLaunch = userProfile == nil
     }
-    
+
     /// ユーザープロファイルを保存
     func saveUserProfile(enrollmentYear: Int, currentGrade: Int, department: String) {
         let profile = UserProfile(
@@ -57,32 +57,32 @@ class AppViewModel {
         userProfile = profile
         isFirstLaunch = false
     }
-    
+
     /// 現在の学年を更新
     func updateCurrentGrade(_ grade: Int) {
         userProfileRepository.update(currentGrade: grade)
         loadUserProfile()
     }
-    
+
     // MARK: - 履修済み単位管理
-    
+
     /// 履修済み単位を読み込む
     func loadAcquiredCredits() {
         acquiredCredits = creditRepository.fetchAll()
     }
-    
+
     /// 履修済み単位を追加
     func addCredit(_ credit: AcquiredCredit) {
         creditRepository.save(credit)
         loadAcquiredCredits()
     }
-    
+
     /// 複数の履修済み単位を一括追加
     func addCreditsBatch(_ credits: [AcquiredCredit]) {
         creditRepository.saveBatch(credits)
         loadAcquiredCredits()
     }
-    
+
     /// 履修済み単位を削除
     func deleteCredit(_ credit: AcquiredCredit) {
         creditRepository.delete(credit)

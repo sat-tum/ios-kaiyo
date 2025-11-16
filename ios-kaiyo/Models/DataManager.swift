@@ -12,19 +12,19 @@ import SwiftData
 @MainActor
 class DataManager {
     static let shared = DataManager()
-    
+
     let container: ModelContainer
     var context: ModelContext {
         container.mainContext
     }
-    
+
     private init() {
         do {
             let schema = Schema([
                 UserProfile.self,
                 AcquiredCredit.self
             ])
-            
+
             let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
             container = try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
