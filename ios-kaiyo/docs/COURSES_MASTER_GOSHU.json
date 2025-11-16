@@ -1,0 +1,238 @@
+{
+  "courses": [
+    {
+      "courseName": "フレッシュマンセミナー",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "共通導入科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "データサイエンス入門A",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "共通導入科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "データサイエンス入門B",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "共通導入科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "日本語表現法",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "共通導入科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "文化人類学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "文化学系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "水中考古学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "文化学系科目",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "芸術学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "文化学系科目",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "日本文学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "文化学系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "ヨーロッパ思想",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "文化学系科目",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "哲学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "哲学・科学論系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "心理学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "哲学・科学論系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "現代倫理学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "哲学・科学論系科目",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "生命・環境文化",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "哲学・科学論系科目",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "科学史",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "哲学・科学論系科目",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "経済学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "総合科目",
+      "subCategory": "社会科学系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "日本国憲法",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "社会科学系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "社会学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "社会科学系科目",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "近現代史",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "社会科学系科目",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "政治学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "社会科学系科目",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "スポーツI",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "健康・スポーツ系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "スポーツII",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "健康・スポーツ系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "健康科学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "総合科目",
+      "subCategory": "健康・スポーツ系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "Basic English I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "外国語系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "Basic English II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "外国語系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "Practical English I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "外国語系科目",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "Practical English II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "総合科目",
+      "subCategory": "外国語系科目",
+      "offeringGrade": 1
+    }
+  ]
+}

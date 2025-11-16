@@ -1,0 +1,769 @@
+{
+  "courses": [
+    {
+      "courseName": "機関システム工学入門",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "E",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "ターボ動力工学I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "ターボ動力工学II",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "内燃機関工学I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "内燃機関工学II",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "エネルギー工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "原子力機関工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "補助機械工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "冷凍空調工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "電気工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機関",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "電気機器学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "機関システム管理工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機関",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "材料力学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "機械力学",
+      "credits": 5,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "トライボロジー",
+      "credits": 5,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "金属材料学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "環境材料学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "工学熱力学A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "工業熱力学B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "伝熱工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "流体工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "機械設計製図I",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "機械設計製図II",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "機械加工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "材料物理工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "計算物理学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目機械",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "ロボット工学I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目制御",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "ロボット工学II",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "ソフトウェア工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "制御工学I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "制御工学II",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "制御工学III",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "基礎電子工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目制御",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "半導体工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目制御",
+      "subCategory": "機関選択・電子必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "電子回路論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "振動と波動",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "計測工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "化学エネルギー変換工学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "情報処理基礎論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目制御",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "船舶工学A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "船舶工学B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "船舶工学C",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "船舶医学A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "船舶医学B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "機関英語I",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "機関英語II",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "機関英語III",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目A",
+      "subCategory": "機関選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "海事法概論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "海法II",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "海運経営論A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "海運経営論B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "海運実務論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "航海システム概論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "契約法",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目A",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "信号情報処理A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "信号情報処理B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "安全性と信頼性A",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "安全性と信頼性B",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "ラプラス・フーリエ解析",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "確率論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "最適化数学",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "複素解析",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "データ構造とアルゴリズム",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "機械学習",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "数値解析",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "舶用工業実務論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目B",
+      "subCategory": "選択",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "電子機械工学実験・実習I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "電子機械工学実験・実習II",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "制御システム工学演習I",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "制御必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "制御システム工学演習II",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "制御必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "材料・機械力学演習",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "熱流体工学演習",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "船舶実験（汐路丸）",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "機関必修",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "電子機械工学入門",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "電子機械工学ゼミナール",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "キャリア形成論",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "学外実習",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "短期学外実習I",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "長期海外実習I",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "卒業研究",
+      "credits": 5,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 4
+    },
+    {
+      "courseName": "水泳実習",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "短艇実習",
+      "credits": 1,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "船舶実習I",
+      "credits": 2,
+      "offeringDepartment": "エンジン",
+      "difficulty": "H",
+      "majorCategory": "専門科目実験",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "船舶実習II",
+      "credits": 3,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "機関必修",
+      "offeringGrade": 3
+    },
+    {
+      "courseName": "船舶実習III",
+      "credits": 5,
+      "offeringDepartment": "エンジン",
+      "difficulty": "M",
+      "majorCategory": "専門科目実験",
+      "subCategory": "機関選択",
+      "offeringGrade": 4
+    }
+  ]
+}

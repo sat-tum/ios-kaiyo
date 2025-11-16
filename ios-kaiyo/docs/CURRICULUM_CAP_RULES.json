@@ -1,0 +1,88 @@
+{
+  "curriculumRules": [
+    {
+      "enrollmentYearRange": [2024, 9999],
+      "department": "海事システム工学科",
+      "course": "船舶管理系",
+      "graduationTotalCredits": 124,
+      "requiredLimits": {
+        "総合科目_共通導入科目_必修": 5,
+        "総合科目_文化学系_選択": 4,
+        "総合科目_哲学科学論系_選択": 4,
+        "総合科目_社会科学系_選択": 4,
+        "総合科目_健康スポーツ系_必修": 2,
+        "総合科目_外国語系_必修": 4,
+        "総合科目_外国語系_選択": 2,
+        "総合科目_自由選択": 4,
+        "基礎教育科目_学部共通科目_必修": 11,
+        "基礎教育科目_学部共通科目_選択必修": 2,
+        "基礎教育科目_学部共通科目_選択": 11,
+        "専門科目_必修科目": 49,
+        "専門科目_選択科目_合計": 28,
+        "専門科目_選択_基礎専門科目系": 6,
+        "専門科目_選択_基盤数理系": 4,
+        "専門科目_選択_船舶管理系": 18,
+        "専門科目_選択_海事工学系": 18
+      },
+      "progressionRules": {
+        "Grade2": { "totalRequiredCredits": 20, "requiredCourses": [] },
+        "Grade3": {
+          "totalRequiredCredits": 62,
+          "requiredCourses": [
+            "Basic English I",
+            "Basic English II",
+            "Practical English I",
+            "微分積分Ⅰ",
+            "線形代数Ⅰ",
+            "物理学"
+          ]
+        },
+        "Grade4": {
+          "totalRequiredCredits": 104,
+          "requiredCourses": ["GLI演習Ⅰ"]
+        }
+      }
+    },
+    {
+      "enrollmentYearRange": [2024, 9999],
+      "department": "海事システム工学科",
+      "course": "海事工学系",
+      "graduationTotalCredits": 124,
+      "requiredLimits": {
+        "総合科目_共通導入科目_必修": 5,
+        "総合科目_文化学系_選択": 4,
+        "総合科目_哲学科学論系_選択": 4,
+        "総合科目_社会科学系_選択": 4,
+        "総合科目_健康スポーツ系_必修": 2,
+        "総合科目_外国語系_必修": 4,
+        "基礎教育科目_学部共通科目_必修": 11,
+        "基礎教育科目_学部共通科目_選択必修": 2,
+        "基礎教育科目_学部共通科目_選択": 11,
+        "専門科目_必修科目": 49,
+        "専門科目_選択科目_合計": 28,
+        "専門科目_選択_基礎専門科目系": 6,
+        "専門科目_選択_基盤数理系": 4,
+        "専門科目_選択_船舶管理系": 18,
+        "専門科目_選択_海事工学系": 18
+      },
+      "progressionRules": {
+        "Grade2": { "totalRequiredCredits": 20, "requiredCourses": [] },
+        "Grade3": {
+          "totalRequiredCredits": 62,
+          "requiredCourses": [
+            "Basic English I",
+            "Basic English II",
+            "Practical English I",
+            "微分積分Ⅰ",
+            "線形代数Ⅰ",
+            "物理学"
+          ]
+        },
+        "Grade4": {
+          "totalRequiredCredits": 104,
+          "requiredCourses": ["GLI演習Ⅰ"]
+        }
+      }
+    }
+  ]
+}

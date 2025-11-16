@@ -1,0 +1,355 @@
+{
+  "courses": [
+    {
+      "courseName": "微分積分Ⅰ",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "微分積分II",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "線形代数Ⅰ",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "線形代数Ⅱ",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "物理学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "数学演習",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "力学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "海洋電子必修",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "天文学A",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "天文学B",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "物理学実験",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "化学熱力学A",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "化学熱力学B",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "統計学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "計算機科学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "基礎ゼミナール",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "常微分方程式",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "電磁気学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "物質科学",
+      "credits": 2,
+      "offeringDepartment": "学部共通",
+      "difficulty": "E",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "化学実験",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "マリンスポーツI",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "マリンスポーツII",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "GLI演習I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "必修",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "GLI演習II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Effective English I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Effective English II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Interactive English I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Interactive English II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Interactive English III",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Interactive English IV",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Intensive English I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "Intensive English II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "選択",
+      "offeringGrade": 2
+    },
+    {
+      "courseName": "ドイツ語 I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "ドイツ語 II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "フランス語 I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "フランス語 II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "スペイン語 I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "スペイン語 II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "M",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "中国語 I",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    },
+    {
+      "courseName": "中国語 II",
+      "credits": 1,
+      "offeringDepartment": "学部共通",
+      "difficulty": "H",
+      "majorCategory": "基礎教育科目",
+      "subCategory": "言語選択",
+      "offeringGrade": 1
+    }
+  ]
+}
