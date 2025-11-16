@@ -9,12 +9,12 @@ import SwiftUI
 
 /// 初回起動時のオンボーディング画面
 struct OnboardingView: View {
-    @Environment(\.dismiss) private var dismiss
     @Bindable var viewModel: AppViewModel
     
     @State private var selectedDepartment: String = ""
     @State private var selectedGrade: Int = 1
     @State private var enrollmentYear: Int = 2024
+    @State private var navigateToCreditRegistration = false
     
     private let departments = [
         "海事システム工学科",
@@ -40,7 +40,7 @@ struct OnboardingView: View {
                     
                     Picker("入学年度", selection: $enrollmentYear) {
                         ForEach(yearOptions, id: \.self) { year in
-                            Text("\(year)年度").tag(year)
+                            Text("\(String(year))年度").tag(year)
                         }
                     }
                     
@@ -65,6 +65,9 @@ struct OnboardingView: View {
                     .disabled(selectedDepartment.isEmpty)
                 }
             }
+            .navigationDestination(isPresented: $navigateToCreditRegistration) {
+                CreditRegistrationView(viewModel: viewModel)
+            }
         }
     }
     
@@ -74,6 +77,7 @@ struct OnboardingView: View {
             currentGrade: selectedGrade,
             department: selectedDepartment
         )
+        navigateToCreditRegistration = true
     }
 }
 

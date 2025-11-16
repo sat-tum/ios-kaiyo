@@ -9,7 +9,6 @@ import SwiftUI
 
 /// 過去の履修単位を登録する画面
 struct CreditRegistrationView: View {
-    @Environment(\.dismiss) private var dismiss
     @Bindable var viewModel: AppViewModel
     
     @State private var currentSemesterIndex = 0
@@ -154,7 +153,7 @@ struct CreditRegistrationView: View {
         }
         
         viewModel.addCreditsBatch(credits)
-        dismiss()
+        // 登録完了後は自動的にメイン画面に遷移（isFirstLaunchがfalseになっているため）
     }
 }
 

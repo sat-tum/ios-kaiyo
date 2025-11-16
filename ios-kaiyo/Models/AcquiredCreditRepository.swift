@@ -13,8 +13,8 @@ import SwiftData
 class AcquiredCreditRepository {
     private let context: ModelContext
 
-    init(context: ModelContext = DataManager.shared.context) {
-        self.context = context
+    init(context: ModelContext? = nil) {
+        self.context = context ?? DataManager.shared.context
     }
 
     /// すべての履修済み単位を取得
@@ -26,7 +26,7 @@ class AcquiredCreditRepository {
     }
 
     /// 特定のカテゴリの履修済み単位を取得
-    func fetch(by category: String) -> [AcquiredCredit] {
+    func fetchByCategory(_ category: String) -> [AcquiredCredit] {
         let descriptor = FetchDescriptor<AcquiredCredit>(
             predicate: #Predicate { $0.category == category },
             sortBy: [SortDescriptor(\.semester), SortDescriptor(\.courseName)]
@@ -35,7 +35,7 @@ class AcquiredCreditRepository {
     }
 
     /// 特定の学期の履修済み単位を取得
-    func fetch(by semester: String) -> [AcquiredCredit] {
+    func fetchBySemester(_ semester: String) -> [AcquiredCredit] {
         let descriptor = FetchDescriptor<AcquiredCredit>(
             predicate: #Predicate { $0.semester == semester },
             sortBy: [SortDescriptor(\.courseName)]

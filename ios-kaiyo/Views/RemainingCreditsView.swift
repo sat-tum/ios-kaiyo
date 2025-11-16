@@ -125,7 +125,7 @@ struct RemainingCreditsView: View {
             Spacer()
             Text("あと \(remaining) 単位")
                 .font(.headline)
-                .foregroundStyle(remaining > 0 ? .primary : .green)
+                .foregroundStyle(remaining > 0 ? Color.primary : Color.green)
             if showChevron {
                 Image(systemName: "chevron.right")
                     .font(.caption)

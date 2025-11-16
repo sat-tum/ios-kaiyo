@@ -13,8 +13,8 @@ import SwiftData
 class UserProfileRepository {
     private let context: ModelContext
 
-    init(context: ModelContext = DataManager.shared.context) {
-        self.context = context
+    init(context: ModelContext? = nil) {
+        self.context = context ?? DataManager.shared.context
     }
 
     /// ユーザープロファイルを取得（1件のみ想定）

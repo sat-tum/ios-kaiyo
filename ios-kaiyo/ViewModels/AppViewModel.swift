@@ -28,11 +28,11 @@ class AppViewModel {
     var selectedRequirementType: RequirementType = .grade2
     
     init(
-        userProfileRepository: UserProfileRepository = UserProfileRepository(),
-        creditRepository: AcquiredCreditRepository = AcquiredCreditRepository()
+        userProfileRepository: UserProfileRepository? = nil,
+        creditRepository: AcquiredCreditRepository? = nil
     ) {
-        self.userProfileRepository = userProfileRepository
-        self.creditRepository = creditRepository
+        self.userProfileRepository = userProfileRepository ?? UserProfileRepository()
+        self.creditRepository = creditRepository ?? AcquiredCreditRepository()
         
         loadUserProfile()
         loadAcquiredCredits()
